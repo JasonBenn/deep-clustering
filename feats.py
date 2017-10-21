@@ -116,6 +116,7 @@ def get_egs(wavlist, min_mix=2, max_mix=3, batch_size=1):
             if not speaker_wavs[spk]:
                 del(speaker_wavs[spk])  # Remove empty speakers from dictionary
             sig, rate = sf.read(p)
+            sig = sig[:,0]  # grab left channel from stereo audio
             if rate != FRAME_RATE:
                 raise Exception("Config specifies " + str(FRAME_RATE) +
                                 "Hz as sample rate, but file " + str(p) +

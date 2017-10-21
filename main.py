@@ -32,7 +32,7 @@ def main():
             if len(egs) == 2:
                 break
     print_examples(egs, model, db_threshold=40, ignore_background=True)
-    
+
     # If you wish to test source separation, generate a mixed 'mixed.wav'
     # file and test with the following line
     # separate_sources('mixed.wav', model, 2, 'out')

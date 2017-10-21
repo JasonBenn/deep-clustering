@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # FFT parameters, self-explanatory
-FRAME_RATE = 8000
+FRAME_RATE = 44100  # TODO: was originally 8000.
 FRAME_LENGTH = .032
 FRAME_SHIFT = .008
 
